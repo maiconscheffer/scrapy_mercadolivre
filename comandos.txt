@@ -1,0 +1,9 @@
+comando iniciar projeto scrapy - scrapystart project 'nome do projeto'
+
+depois de entrar dentro da pasta coleta'nome da pasta' inserir o comando
+scrapy genspider mercadolivre https://lista.mercadolivre.com.br/tenis-corrida-masculino
+
+scrapy shell -  entra em um terminal para navegação das paginas
+
+comando para buscar os itens = 
+response.css('nome da classe)
