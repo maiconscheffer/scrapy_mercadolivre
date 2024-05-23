@@ -32,7 +32,7 @@ average_new_price = df['new_price'].mean()
 col3.metric(label="Preço Médio Novo (R$)", value=f"{average_new_price:.2f}")
 
 # Quais marcas são mais encontradas até a 10ª página
-st.subheader('Marcas mais encontradas até a 10ª página')
+st.subheader('Marcas mais encontradas')
 col1, col2 = st.columns([4, 2])
 top_10_pages_brands = df['brand'].value_counts().sort_values(ascending=False)
 col1.bar_chart(top_10_pages_brands)
